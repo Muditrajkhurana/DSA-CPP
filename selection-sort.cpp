@@ -12,4 +12,4 @@ int main(){
     for(int j=0;j<num.size();j++){
         cout<<num[j]<<" ";
     }
-}
+}GH

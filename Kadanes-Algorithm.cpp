@@ -1,14 +1,15 @@
 #include<bits/stdc++.h>
 using namespace std;
 int main(){
-    vector<int> nums={1, 2, 3, -2, 5};
+    vector<int> nums={-1, -2, -3, -4};
     int maxe=nums[0];
+    int prefix=0;
     for(int i=0;i<nums.size();i++){
-        int prefix=0;
-        for(int j=i;j<nums.size();j++){
-            prefix+=nums[j];
-            maxe=max(prefix,maxe);
+        prefix+=nums[i];
+        maxe=max(prefix,maxe);
+        if(prefix<0){
+            prefix=0;
         }
     }
-    cout<<maxe;
+    cout<<maxe<<endl;
 }

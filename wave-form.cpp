@@ -10,7 +10,7 @@ int main(){
     int max_col=nums[0].size();
     int row;
     int col=0;
-    while(ans.size()<=max_row*max_col){
+    while(ans.size()<max_row*max_col){
         for(row=0;row<max_row;row++){
             ans.push_back(nums[row][col]);
         }
@@ -21,7 +21,7 @@ int main(){
         col++;
     }
 
-    for(int i=0;i<max_col*max_row;i++){
+    for(int i=0;i<ans.size();i++){
         cout<<ans[i]<<" ";
     }
 }

@@ -33,7 +33,6 @@ int main(){
         }
         col++;
         }
-        cout<<ans.size();
     }
     for(int i=0;i<ans.size();i++){
         cout<<ans[i]<<" ";

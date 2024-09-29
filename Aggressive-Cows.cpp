@@ -1,7 +1,7 @@
 #include<bits/stdc++.h>
 using namespace std;
 int main(){
-    vector<int> stalls ={1,2,4,8,9};
+    vector<int> stalls ={1,2,4,10,8,9};
     int k=3;
     int n=stalls.size();
     sort(stalls.begin(),stalls.end());
